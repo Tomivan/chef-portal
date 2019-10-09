@@ -1,0 +1,23 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="col-md-8 offset-md-2">
+            <h1>Log In</h1>
+            <form name="form" (ngSubmit)="signUpForm.form.valid && login(signUpForm)" #signUpForm="ngForm" novalidate>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Log In</button>
+                </div>
+                <div class="form-group">
+                    <p>Don't have an account?</p><button class="btn btn-primary"><a [routerLink]="['/signup']">Sign Up</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
