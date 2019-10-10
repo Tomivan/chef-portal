@@ -21,7 +21,6 @@ export class ChefComponent implements OnInit {
     localStorage.setItem('editUserId', chef.id.toString());
     this.router.navigate(['edit']);
   }
-
   deleteChef(chef: Chef) {
     console.log(chef);
     this.chefService.delete(chef);

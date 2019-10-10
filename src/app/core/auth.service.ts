@@ -10,7 +10,11 @@ export class AuthService {
 
   public isAuthenticated(): boolean {
 
+<<<<<<< HEAD
     const token = localStorage.getItem('loginId');
+=======
+    const token = localStorage.getItem('token');
+>>>>>>> c632537fa432959169f898a02a466a865219bcb5
 
     return !this.jwtHelper.isTokenExpired(token);
   }
