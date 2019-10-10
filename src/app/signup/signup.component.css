@@ -1,0 +1,9 @@
+.login{
+    display: flex;
+}
+.btn-login{
+    margin-left: 10px;
+}
+p {
+    margin-top: 10px;
+}
